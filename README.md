@@ -13,8 +13,8 @@
 ---
 
 ### 📊 Статистика профиля:
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ВАШ_НИК&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ВАШ_НИК&layout=compact&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Samuray4ik04&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Samuray4ik04&layout=compact&theme=radical)
 
 ---
 
@@ -28,16 +28,13 @@
 ---
 
 ### 📫 Связаться со мной:
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/ВАШ_НИК)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ВАШ_НИК)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ВАШ_НИК)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Samuray43k)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Samuray4ik04)
 
 ---
 
 ### 🚀 Последние проекты:
-- 🔹 **[Название проекта](ссылка_на_репозиторий)** — Краткое описание
-- 🔹 **[Название проекта](ссылка_на_репозиторий)** — Краткое описание
-- 🔹 **[Название проекта](ссылка_на_репозиторий)** — Краткое описание
+НЕТУ
 
 ---
 
