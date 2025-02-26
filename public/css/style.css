@@ -1,124 +1,50 @@
 body {
-    margin: 0;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
-    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
-
-.chat-container {
-    width: 400px;
-    background: #282828;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    overflow: hidden;
-}
-
-.chat-header {
-    background: #333;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #444;
-}
-
-.chat-header h2 {
-    color: #fff;
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.messages {
-    height: 500px;
-    padding: 15px;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-}
-
-.message {
-    margin: 10px 0;
-    padding: 10px 15px;
+#chat-container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 75%;
+}
+#messages {
+    height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+input {
+    width: calc(100% - 50px);
+    padding: 5px;
+}
+button {
+    padding: 5px 10px;
 }
 
-.message.user {
-    background: #3a3a3a;
-    margin-left: auto;
-    color: #fff;
-}
+// public/script.js (Frontend Logic)
+const socket = io();
+const messageInput = document.getElementById('messageInput');
+const sendButton = document.getElementById('sendButton');
+const messages = document.getElementById('messages');
 
-.message.bot {
-    background: #444;
-    margin-right: auto;
-    color: #e0e0e0;
-}
+sendButton.addEventListener('click', () => {
+    const message = messageInput.value;
+    if (message) {
+        socket.emit('chatMessage', message);
+        messageInput.value = '';
+    }
+});
 
-.message .username {
-    font-weight: 600;
-    margin-right: 8px;
-}
-
-.message .time {
-    font-size: 0.8em;
-    color: #777;
-    margin-left: 8px;
-}
-
-.input-area {
-    display: flex;
-    border-top: 1px solid #444;
-    background: #333;
-}
-
-#username {
-    flex: 1;
-    padding: 15px;
-    border: none;
-    background: #444;
-    color: #fff;
-    font-size: 1em;
-}
-
-#message {
-    flex: 3;
-    padding: 15px;
-    border: none;
-    background: #444;
-    color: #fff;
-    font-size: 1em;
-    transition: all 0.3s;
-}
-
-#sendBtn {
-    padding: 0 20px;
-    background: #007bff;
-    border: none;
-    color: white;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-#sendBtn:hover {
-    background: #0056b3;
-}
-
-#sendBtn:disabled {
-    background: #6c757d;
-    cursor: not-allowed;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #282828;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 4px;
-}
+socket.on('chatMessage', (msg) => {
+    const messageElement = document.createElement('div');
+    messageElement.textContent = msg;
+    messages.appendChild(messageElement);
+    messages.scrollTop = messages.scrollHeight;
+});

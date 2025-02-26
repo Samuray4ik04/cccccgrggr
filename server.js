@@ -1,35 +1,24 @@
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
-
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
 app.use(express.static('public'));
 
-const users = {};
-
 io.on('connection', (socket) => {
-    socket.on('new-user', (username) => {
-        users[socket.id] = username;
-        io.emit('user-connected', username);
+    console.log('A user connected');
+    
+    socket.on('chatMessage', (msg) => {
+        io.emit('chatMessage', msg); // Отправляем всем
     });
-
-    socket.on('send-message', (message) => {
-        io.emit('message', {
-            username: users[socket.id],
-            text: message,
-            time: new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})
-        });
-    });
-
+    
     socket.on('disconnect', () => {
-        if (users[socket.id]) {
-            io.emit('user-disconnected', users[socket.id]);
-            delete users[socket.id];
-        }
+        console.log('User disconnected');
     });
 });
 
-server.listen(3000, () => console.log('Сервер запущен на порту 3000'));
+server.listen(3000, () => {
+    console.log('Server running on http://localhost:3000');
+});

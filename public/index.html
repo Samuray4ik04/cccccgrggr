@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мега-чат</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Online Chat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <h2>Мега-чат <span class="online-count">0</span></h2>
-        </div>
-        <div class="messages" id="messages"></div>
-        <div class="input-area">
-            <input type="text" id="username" placeholder="Ваше имя" maxlength="20">
-            <input type="text" id="message" placeholder="Введите сообщение..." maxlength="500" disabled>
-            <button id="sendBtn" disabled>✈</button>
-        </div>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendButton">Send</button>
     </div>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="js/chat.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
