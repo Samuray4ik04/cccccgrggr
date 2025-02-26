@@ -1,5 +1,44 @@
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/wkW0maGDN1eSc/giphy.gif?cid=790b7611568ab12nwiyrf8enhbflgymwg8d756j5385yto72&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="100"/>
-</div>
-📫 Свяжитесь со мной:  
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Samuray43k)
+## 👋 Привет, я [ВАШЕ ИМЯ]!
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Добро+пожаловать+в+мой+профиль!;Я+разработчик+и+люблю+кодить!;Всегда+учусь+чему-то+новому!)
+
+### 🛠 Обо мне:
+- 🔭 Работаю над **[Название проекта](ссылка_на_репозиторий)**
+- 🌱 Изучаю **[технологии, фреймворки и языки]**
+- 💡 Люблю **решать сложные задачи и экспериментировать**
+- 💬 Можете спросить меня про **[сфера знаний]**
+- 🎯 Цель: **Стать экспертом в [ваша цель]**
+- ⚡ Факт обо мне: **[интересный факт о себе]**
+
+---
+
+### 📊 Статистика профиля:
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ВАШ_НИК&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ВАШ_НИК&layout=compact&theme=radical)
+
+---
+
+### ⚙️ Стек технологий:
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+---
+
+### 📫 Связаться со мной:
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/ВАШ_НИК)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ВАШ_НИК)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ВАШ_НИК)
+
+---
+
+### 🚀 Последние проекты:
+- 🔹 **[Название проекта](ссылка_на_репозиторий)** — Краткое описание
+- 🔹 **[Название проекта](ссылка_на_репозиторий)** — Краткое описание
+- 🔹 **[Название проекта](ссылка_на_репозиторий)** — Краткое описание
+
+---
+
+⭐️ **Спасибо за визит! Не забудьте заглянуть в мои репозитории!** 😃
